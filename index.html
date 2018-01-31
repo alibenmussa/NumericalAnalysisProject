@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>مشروع التحليل العددي</title>
+    <link rel="stylesheet" href="fonts/XITS.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="methods.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div id="subject">
+                <span>مشروع التحليل العددي</span>
+                <h6>216180296</h6>
+            </div>
+        </header>
+        <div class="content " id="component-1">
+            <p>قم بإدخال البيانات الصحيحة لاستكمال الدالة عند القيمة التالية:</p>
+            <div class="x-value">
+                <span>f(</span>
+                <input type="text" name="value" class="value" id="get-x" placeholder="x">
+                <span>) =
+                    <span>?</span>
+                </span>
+            </div>
+            <table class="values">
+                <tr class="x-values">
+                    <td class="primary">x</td>
+                    <td>
+                        <input type="text" class="cell">
+                    </td>
+                    <td>
+                        <input type="text" class="cell">
+                    </td>
+                    <td>
+                        <input type="text" class="cell">
+                    </td>
+                    <td>
+                        <input type="text" class="cell">
+                    </td>
+                    <td class="control add primary">+</td>
+                </tr>
+                <tr class="y-values">
+                    <td class="primary">f(x)</td>
+                    <td>
+                        <input type="text" class="cell">
+                    </td>
+                    <td>
+                        <input type="text" class="cell">
+                    </td>
+                    <td>
+                        <input type="text" class="cell">
+                    </td>
+                    <td>
+                        <input type="text" class="cell">
+                    </td>
+                    <td class="primary control remove">-</td>
+                </tr>
+            </table>
+            <hr>
+            <p class="descripotion">اختر الطريقة المناسبة للاستكمال من الطرق الآتية:</p>
+            <div class="methods">
+                <button class="method" id="linear-interpolation" data-list-size="1">الاستكمال الخطي</button>
+                <button class="method" id="grigori-newton" data-list-size="2">غريغوري نيوتن</button>
+                <button class="method" id="lagrange" data-list-size="3">لاجرانج</button>
+                <button class="method" id="newton-difference" data-list-size="4">نيوتن للفروق</button>
+                <button class="method" id="linear-squares" data-list-size="5">المربعات الصغرى الخطية</button>
+                <button class="method" id="non-linear-squares" data-list-size="6">المربعات الصغرى الغير خطية</button>
+            </div>
+        </div>
+        <div class="content" id="component-2">
+            <p id="type"></p>
+            <div class="x-value">
+                <span>f(</span>
+                <input type="text" name="value" class="value" id="show-x" placeholder="x" value="2.2" disabled>
+                <span>) =
+                    <span id="result">?</span>
+                </span>
+            </div>
+            <div id="results"></div>
+            <button id="back">رجوع</button>
+        </div>
+        <footer>
+            <p>علي جمال الدين علي بن موسى | 216180296 | المجموعة B</p>
+        </footer>
+    </div>
+</body>
+
+</html>

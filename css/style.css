@@ -1,0 +1,239 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskufiarabic.css);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    direction: rtl;
+    background: #f4f5f5;
+    font-family: 'Noto Sans Kufi Arabic', 'XITS', 'Tahoma', sans-serif !important;
+    overflow-x: hidden;
+}
+
+p {
+    color: #9ca4a9;
+    font-size: 10pt;
+}
+
+#results {
+    direction: ltr;
+    font-size: 14pt;
+    font-style: italic;
+}
+
+#results span {
+    padding: 0 20px;
+}
+
+
+
+header {
+    font-family: 'Noto Sans Kufi Arabic', 'Tahoma';
+    text-align: center;
+    width: 100%;
+    padding: 10px 40px;
+    background: #006dc7;
+    color: #ffffff;
+    font-size: 14pt;
+}
+
+input[type="submit"],
+button {
+    border: 1px solid #0062b2;
+    background: #006dc7;
+    color: #ffffff;
+    width: 240px;
+    height: 40px;
+    font-family: 'Noto Sans Kufi Arabic', 'Tahoma', sans-serif;
+    font-size: 10pt;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    outline: none;
+}
+
+input[type="submit"]:hover,
+.control:hover,
+button:hover {
+    background: #0062b2 !important;
+}
+
+hr {
+    border: none;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #f5f6f7;
+}
+
+.content {
+    display: block;
+    text-align: center;
+    color: #7a8288;
+    font-weight: lighter;
+    margin: 60px auto 90px;
+    padding: 50px;
+    width: 70%;
+    box-shadow: 0 0 5px #dde0e36c;
+    background: #ffffff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+#component-2 {
+    display: none;
+}
+
+.x-value {
+    font-size: 28pt;
+    direction: ltr;
+    font-style: italic;
+    margin: 20px 0 30px;
+}
+
+.x-value span {
+    vertical-align: middle;
+}
+
+.x-value .value {
+    font-size: 28pt;
+    text-align: center;
+    color: #7a8288;
+    outline: none;
+    font-weight: lighter;
+    border: 1px solid #dde0e3;
+    width: 100px;
+    vertical-align: middle;
+    font-style: italic;
+    font-family: 'Noto Sans Kufi Arabic', 'XITS', 'Tahoma', sans-serif;
+}
+
+table {
+    direction: ltr;
+    margin: 20px auto 30px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    width: 100%;
+    border-collapse: collapse;
+    font-style: italic;
+    font-size: 13pt;
+    table-layout: fixed;
+}
+
+table#diffrentialTable .main-cell {
+    width: 80px;
+    background: #f5f6f7;
+}
+
+table#diffrentialTable {
+    margin: 20px auto 10px;
+    width: 75%;
+}
+
+table tr td {
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    border: 1px solid #dde0e3;
+}
+
+table tr td.primary,
+.control {
+    color: #ffffff;
+    background: #006dc7;
+    width: 80px;
+    line-height: 50px;
+    border: 1px solid #0062b2;
+}
+
+table.values tr td .cell {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border: none;
+    text-align: center;
+    color: #7a8288;
+    font-size: 1em;
+    outline: none;
+    font-family: 'Noto Sans Kufi Arabic', 'XITS', 'Tahoma', sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+table.values tr td.control {
+    cursor: pointer;
+    font-style: italic;
+}
+
+footer {
+    clear: both;
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    background: #ffffff;
+    color: #7a8288;
+    text-align: center;
+    display: block;
+}
+
+:-moz-placeholder {
+    color: #dde0e3;
+}
+
+:-ms-input-placeholder {
+    color: #dde0e3;
+}
+
+::-moz-placeholder {
+    color: #dde0e3;
+}
+
+::-webkit-input-placeholder {
+    color: #dde0e3;
+}
+
+.methods {
+    margin: 0 auto;
+    -webkit-display: flex;
+    -ms-display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.descripotion {
+    margin: 30px 0 20px;
+}
+
+.methods .method {
+    margin-bottom: 10px;
+    float: right;
+}
+
+input[type="text"]:disabled {
+    background: #f5f6f7;
+}
+
+#back {
+    display: block;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    .content {
+        width: 90%;
+    }
+}
